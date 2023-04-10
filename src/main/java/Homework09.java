@@ -26,9 +26,41 @@ Let us list the factors of the first seven triangle numbers:
 28: 1,2,4,7,14,28
 We can see that 28 is the first triangle number to have over five divisors.
 
+
 What is the value of the first triangle number to have over one hundred divisors?
     
+    Answer: I think its number 73920. Its the first list thats very long so Its probably over 100 divisors
+    
     */
+
+    
+    
+    
+   public static void main(String[] args){
+       //I'm not sure if this is what you asked for but I recreated the algroithm to output the example of the seven traingle numbers
+       int num = 1000;
+       int sum = 0;
+       for(int i = 1; i <= num; i++){
+           sum += i;
+           System.out.print(sum+": ");
+           int j = 1;
+           while(j <= sum){
+                if(sum % j == 0){
+                   if(sum == j){
+                       System.out.print(sum);
+                   }else{
+                       System.out.print(j + ",");
+                   }
+               }
+                j++;
+               
+           }
+           System.out.println();
+       }
+       
+       
+   }
+   
     
     
 }

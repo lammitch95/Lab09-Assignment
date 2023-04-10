@@ -47,5 +47,15 @@ public class Problem01 {
     
    // also discuss T(n) = 3 T(n/4) + n
     
+    /*
+    a = 3
+    b =4
+    f(n) = n
+    c = 1
+    log base 4 3 = 0.793
+    0.793 < 1
+    Case 3
+    Time COmplexit: O(n)
+    */
     
 }
